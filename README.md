@@ -1,23 +1,27 @@
-このリポジトリは, https://webdocs.cs.ualberta.ca/~games/PCP/doc.htm で公開されているPCP[3,4]の未解決問題に対する解と、解がない証拠を提供するためのものです。
+This repository provides solutions and proof of unsolvability for 3,170 unresolved instances of PCP[3,4], as originally published at https://webdocs.cs.ualberta.ca/~games/PCP/doc.htm.
 
+## Instances Without Proofs in This Repository
 
-## このリポジトリに証明がないインスタンス
+The following two instances remain unsolved:
 
-次の二つのインスタンスは、まだ解かれていません。
 - 1101_1__1_10__0_1011
 - 1110_0__10_1__1_1011
 
 
-次の５つのインスタンスは、それぞれ別のインスタンスへ帰着されています。この帰着の正当性はまだ形式化されていません.
+## Notes
+The following five instances have been reduced to other instances. However, the correctness of these reductions has not yet been formalized:
+
 - 1111_101__1110_1__1_1111 -> 1111_01__110_1__1_1111 -> [1111_10__011_1__1_1111](./proofs/1111_10__011_1__1_1111)
-  1. ```10``` を ```0``` に置き換え
-  2. 各タイルを左右反転
+  1. Reaplce ```10``` with ```0```.
+  2. Flip each tile horizontally.
 - 1111_110__1011_1__1_1111 -> [1111_10__011_1__1_1111](./proofs/1111_10__011_1__1_1111)
-  1. ```10``` を ```0``` に置き換え
+  1. Reaplce ```10``` with ```0```.
 - 1111_100__0011_1__1_1111 -> [1111_10__011_1__1_1111](./proofs/1111_10__011_1__1_1111)
-  1. ```00``` を ```0``` に置き換え
-- 1111_110__1110_1__1_1111 -> 1111_0__10_1__1_1111 -> [1111_1__1_01__0_1111](./proofs/1111_1__1_01__0_1111)
-  1. ```110``` を ```0``` に置き換え
-  2. 各タイルを左右反転(そして、順番を入れ替える)
-- 1111_110__1101_1__1_1111 -> 1111_0__01_1__1_1111 -> [1111_1__1_01__0_1111](./proofs/1111_1__1_01__0_1111)
-  1. ```110``` を ```0``` に置き換え(そして、順番を入れ替える)
+  1. Reaplce ```00``` with ```0```.
+- 1111_110__1110_1__1_1111 -> 1111_0__10_1__1_1111 -> [1111_1__1_10__0_1111](./proofs/1111_1__1_10__0_1111)
+  1. Reaplce ```110``` with ```0```.
+  2. Flip vertically.
+- 1111_110__1101_1__1_1111 -> 1111_0__01_1__1_1111 -> [1111_1__1_10__0_1111](./proofs/1111_1__1_10__0_1111)
+  1. Reaplce ```110``` with ```0```.
+  2. Flip each tile horizontally.
+  3. Flip vertically.
