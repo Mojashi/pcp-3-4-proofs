@@ -1,0 +1,3 @@
+session "PCPDef" = "HOL" + 
+    theories
+        PCP
