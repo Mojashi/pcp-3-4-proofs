@@ -1,11 +1,12 @@
 This repository provides solutions and proof of unsolvability for 3,170 unresolved instances of PCP[3,4], as originally published at https://webdocs.cs.ualberta.ca/~games/PCP/doc.htm.
 
-## Instances Without Proofs in This Repository
+## Status
 
-The following two instances remain unsolved:
+All 3,170 instances now have either a solution or a proof of unsolvability.
+The last two open instances were solved in September 2026:
 
-- 1101_1__1_10__0_1011
-- 1110_0__10_1__1_1011
+- [1101_1__1_10__0_1011](./proofs/1101_1__1_10__0_1011) (solution length 1584)
+- [1110_0__10_1__1_1011](./proofs/1110_0__10_1__1_1011) (solution length 2712)
 
 
 ## Notes
